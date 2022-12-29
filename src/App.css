@@ -1,9 +1,9 @@
 .background {
-  /* background-image: url(./imgs/woodTable.jpeg); */
+  background-image: url(./imgs/woodTable.jpeg);
   background-position: center;
   /* background-repeat: no-repeat; */
   background-size: contain;
   width: auto;
   height: auto;
-  /* border: 5px solid black; */
+  border: 5px solid black;
 }

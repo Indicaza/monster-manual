@@ -9,15 +9,20 @@
   margin: 2.5%;
   padding: auto;
   background: url(./imgs/papyrus.png);
+  background-repeat: repeat;
+  background-attachment: local;
   /* scroll-behavior: smooth; */
+  /* transform: translateZ(-1px); */
 }
 
 .page {
   margin: 0 5rem;
+  perspective: 1px;
+
   /* padding: auto; */
   /* align-items: center; */
   /* padding: auto; */
-
+  transform: translateZ(-2px);
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
@@ -168,8 +173,8 @@ h3 {
 .body {
   /* border: 1px solid red; */
   background: url(./imgs/papyrus.png);
-  background-repeat: repeat;
-  background-attachment: scroll;
+  background-repeat: repeat-y;
+  background-attachment: local;
   border-radius: 2.5px;
   margin: 2.5% 5% 0;
   padding: 1rem;

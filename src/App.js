@@ -5,12 +5,8 @@ import { Page } from './componants/pages/pages.jsx';
 import './App.css';
 // import { useInView } from 'react-intersection-observer';
 
-function App() {
-  // const { ref, inView, entry } = useInView({
-  //   /* Optional options */
-  //   threshold: 0,
-  // });
 
+function App() {
 
   return (
     <div className='background'>
