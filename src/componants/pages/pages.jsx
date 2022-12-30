@@ -6,14 +6,14 @@ import page4 from './imgs/paper4.png';
 import page5 from './imgs/paper5.png';
 import page6 from './imgs/paper6.png';
 import page7 from './imgs/paper7.png';
-import monsters from '../monsters.json';
+// import props from '../props.json';
 // import { useRef, useEffect } from 'react';
 
 import './pages.js';
 import './pages.css';
 
 
-export const Page = () => {
+export const Page = (props) => {
   const pagesArray = [page1, page2, page3, page4, page5, page6, page7];
   const randomIndex = Math.floor(Math.random() * pagesArray.length);
   const page = pagesArray[randomIndex];
@@ -21,48 +21,48 @@ export const Page = () => {
 
   return (
     <div className='container'>
-      {monsters.map((monsters) => (
+      {/* {props.map((props) => ( */}
         <div className='page reveal fade-bottom' style={{backgroundImage:`url(${page})`}}>
           <div className='title'>
-            <h2>{monsters.name}</h2>
+            <h2>{props.name}</h2>
             <div className='challenge'>
-                <h3>{monsters.meta}</h3>
-                <p>CR: {monsters.Challenge}</p>
+                <h3>{props.meta}</h3>
+                <p>CR: {props.Challenge}</p>
             </div>
           </div>
           <div className='picture'
             style={{
-              backgroundImage:`url(${monsters.img_url})`,
+              backgroundImage:`url(${props.img_url})`,
             }}
           />
           <div className='savingThrows'>
-            <p>Saving Throws: {monsters['Saving Throws']}</p>
+            <p>Saving Throws: {props['Saving Throws']}</p>
           </div>
           <div className='details'>
-            <p>Armor Class: {monsters['Armor Class']}</p>
-            <p>Hit Points: {monsters['Hit Points']}</p>
-            <p>Speed: {monsters.Speed}</p>
+            <p>Armor Class: {props['Armor Class']}</p>
+            <p>Hit Points: {props['Hit Points']}</p>
+            <p>Speed: {props.Speed}</p>
           </div>
           <div className='content'>
             <div className='stats'>
               <ul>
                 <li>
-                  <p>STR: {monsters.STR} - {monsters.STR_mod}</p>
+                  <p>STR: {props.STR} - {props.STR_mod}</p>
                 </li>
                 <li>
-                  <p>DEX: {monsters.DEX} - {monsters.DEX_mod}</p>
+                  <p>DEX: {props.DEX} - {props.DEX_mod}</p>
                 </li>
                 <li>
-                  <p>CON: {monsters.CON} - {monsters.CON_mod}</p>
+                  <p>CON: {props.CON} - {props.CON_mod}</p>
                 </li>
                 <li>
-                  <p>INT: {monsters.INT} - {monsters.INT_mod}</p>
+                  <p>INT: {props.INT} - {props.INT_mod}</p>
                 </li>
                 <li>
-                  <p>WIS: {monsters.WIS} - {monsters.WIS_mod}</p>
+                  <p>WIS: {props.WIS} - {props.WIS_mod}</p>
                 </li>
                 <li>
-                  <p>CHA: {monsters.CHA} - {monsters.CHA_mod}</p>
+                  <p>CHA: {props.CHA} - {props.CHA_mod}</p>
                 </li>
               </ul>
             </div>
@@ -70,25 +70,26 @@ export const Page = () => {
               <ul className='abilities'>
                 <h3>Ablilities</h3>
                 <li>
-                  <p>Languages: {monsters.Languages}</p>
+                  <p>Languages: {props.Languages}</p>
                 </li>
                 <li>
-                  <p>Senses: {monsters.Senses}</p>
+                  <p>Senses: {props.Senses}</p>
                 </li>
                 <li>
-                  <p>Skills: {monsters.Skills}</p>
+                  <p>Skills: {props.Skills}</p>
                 </li>
               </ul>
                 <h3>Traits</h3>
-                <div className='text' id='traits' dangerouslySetInnerHTML={{__html:monsters.Traits}}></div>
+                <div className='text' id='traits' dangerouslySetInnerHTML={{__html:props.Traits}}></div>
                 <h3>Actions</h3>
-                <div className='text' dangerouslySetInnerHTML={{__html:monsters.Actions}}></div>
+                <div className='text' dangerouslySetInnerHTML={{__html:props.Actions}}></div>
                 <h3>Legendary Actions</h3>
-                <div className='text' dangerouslySetInnerHTML={{__html:monsters['Legendary Actions']}}></div>
+                <div className='text' dangerouslySetInnerHTML={{__html:props['Legendary Actions']}}></div>
             </div>
           </div>
         </div>
-      ))}
+      {/* ))} */}
+      
     </div>
   );
 }
