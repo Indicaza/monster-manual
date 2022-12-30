@@ -21,7 +21,6 @@ export const Page = (props) => {
 
   return (
     <div className='container'>
-      {/* {props.map((props) => ( */}
         <div className='page reveal fade-bottom' style={{backgroundImage:`url(${page})`}}>
           <div className='title'>
             <h2>{props.name}</h2>
@@ -30,7 +29,10 @@ export const Page = (props) => {
                 <p>CR: {props.Challenge}</p>
             </div>
           </div>
-          <div className='picture'
+          <div 
+          // className=''
+          id="torn_edge_banner" 
+          className="picture torn_container torn_left torn_right"
             style={{
               backgroundImage:`url(${props.img_url})`,
             }}
@@ -88,8 +90,6 @@ export const Page = (props) => {
             </div>
           </div>
         </div>
-      {/* ))} */}
-      
     </div>
   );
 }
