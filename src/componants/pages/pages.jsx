@@ -2,10 +2,8 @@ import React from 'react';
 import page1 from './imgs/paper1.png';
 import page2 from './imgs/paper2.png';
 import page3 from './imgs/paper3.png';
-import page4 from './imgs/paper4.png';
 import page5 from './imgs/paper5.png';
 import page6 from './imgs/paper6.png';
-import page7 from './imgs/paper7.png';
 // import props from '../props.json';
 // import { useRef, useEffect } from 'react';
 
@@ -14,7 +12,7 @@ import './pages.css';
 
 
 export const Page = (props) => {
-  const pagesArray = [page1, page2, page3, page4, page5, page6, page7];
+  const pagesArray = [page1, page2, page3, page5, page6];
   const randomIndex = Math.floor(Math.random() * pagesArray.length);
   const page = pagesArray[randomIndex];
 
