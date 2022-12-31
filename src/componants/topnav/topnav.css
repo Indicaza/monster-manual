@@ -1,0 +1,58 @@
+.topnav {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    position: fixed;
+    margin: 0 auto;
+    width: 100vw;
+    height: 6vh;
+    background-image: linear-gradient(#070809, #2D3237);
+    background-repeat: repeat-x;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.logoContainer {
+    margin-left: 2.5vw;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background: url(../../imgs/treeLogo.png);
+    background-size: contain;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+    color: white;
+    margin: auto;
+}
+
+.search {
+    margin: auto 2.5vw auto auto;
+    padding: auto;
+    width: 15vw;
+    height: auto;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.searchButton {
+    background-color: green;
+    width: 1rem;
+    height: 1rem;
+}

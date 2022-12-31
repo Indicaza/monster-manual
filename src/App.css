@@ -1,14 +1,16 @@
 .background {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* background-attachment: local; */
   /* background-image: url(./imgs/woodTable.jpeg); */
   /* background: url(./imgs/papyrus.png); */
-  /* background-color: black; */
+}
 
-  background-position: center;
-  background-repeat: repeat;
-  background-size: contain;
-  width: auto;
-  height: auto;
-  /* border: 5px solid black; */
+.scrollContainer {
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
+}
+
+.Page {
+  scroll-snap-align: center;
 }

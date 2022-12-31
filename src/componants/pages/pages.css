@@ -4,9 +4,8 @@
 
   /* justify-content: space-between; */
   /* border: 5px solid black; */
-  scroll-behavior: snap;
 
-  margin: 2.5%;
+  margin: 5.25vh auto;
   padding: auto;
   /* background: url(./imgs/papyrus.png); */
   background-repeat: repeat;
@@ -16,8 +15,9 @@
 }
 
 .page {
-  margin: 0 5rem;
-  perspective: 1px;
+  margin: 7vh 33.333vw;
+  /* perspective: 1px; */
+  scroll-snap-align: center;
 
   /* padding: auto; */
   /* align-items: center; */

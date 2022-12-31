@@ -12,7 +12,7 @@ import './pages.css';
 
 
 export const Page = (props) => {
-  const pagesArray = [page1, page2, page3, page5, page6];
+  const pagesArray = [page1, page2, page5, page6];
   const randomIndex = Math.floor(Math.random() * pagesArray.length);
   const page = pagesArray[randomIndex];
 
