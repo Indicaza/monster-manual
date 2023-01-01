@@ -1,5 +1,10 @@
 .background {
-  display: flex;
+  /* display: flex; */
+  /* background-color: #17BC9B; */
+  /* overflow:auto; */
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
   /* justify-content: space-between; */
   /* background-attachment: local; */
   /* background-image: url(./imgs/woodTable.jpeg); */
@@ -7,10 +12,19 @@
 }
 
 .scrollContainer {
+  /* width: 100vw;
+  height: 100vh; */
+  margin: 0 auto;
+  background-color: #17BC9B;
   scroll-snap-type: x mandatory;
-  scroll-padding: 50%;
+  overflow-x: scroll;
+  display: flex;
 }
 
-.Page {
-  scroll-snap-align: center;
+.page {
+  /* flex: none; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
 }

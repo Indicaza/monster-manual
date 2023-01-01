@@ -4,12 +4,12 @@ import './topnav.css';
 
 export const TopNav = () => {
     return (
-        <div className='topnav'>
-            <div className='logoContainer'>
-                <div className='logo'></div>
+        <div className='topnav growNav'>
+            <div className='logoContainer growNav'>
+                <div className='logo growNav'></div>
                 <h1>Monster Manual</h1>
             </div>
-            <div className='search'>
+            <div className='search growNav'>
                 <input type='text' placeholder='Search'></input>
             </div>
         </div>

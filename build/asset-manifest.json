@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/monster-manual/static/css/main.6ebd7025.css",
-    "main.js": "/monster-manual/static/js/main.e38d1486.js",
+    "main.css": "/monster-manual/static/css/main.392a5c5e.css",
+    "main.js": "/monster-manual/static/js/main.d0578d0b.js",
     "static/js/787.d84ec655.chunk.js": "/monster-manual/static/js/787.d84ec655.chunk.js",
     "static/media/paper1.png": "/monster-manual/static/media/paper1.7d809c39d5d49db8c48f.png",
     "static/media/paper6.png": "/monster-manual/static/media/paper6.bd8a644a1d2c79bc2aff.png",
     "static/media/paper5.png": "/monster-manual/static/media/paper5.156e6af0b931d0ce033b.png",
     "static/media/paper3.png": "/monster-manual/static/media/paper3.615eb812da9b0a759251.png",
     "static/media/paper2.png": "/monster-manual/static/media/paper2.7570025db9a6680512b3.png",
+    "static/media/treeLogo.png": "/monster-manual/static/media/treeLogo.327dfc56ce848f828af4.png",
     "static/media/papyrus.png": "/monster-manual/static/media/papyrus.26a3c21ec1133bc7f2c6.png",
     "index.html": "/monster-manual/index.html",
-    "main.6ebd7025.css.map": "/monster-manual/static/css/main.6ebd7025.css.map",
-    "main.e38d1486.js.map": "/monster-manual/static/js/main.e38d1486.js.map",
+    "main.392a5c5e.css.map": "/monster-manual/static/css/main.392a5c5e.css.map",
+    "main.d0578d0b.js.map": "/monster-manual/static/js/main.d0578d0b.js.map",
     "787.d84ec655.chunk.js.map": "/monster-manual/static/js/787.d84ec655.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ebd7025.css",
-    "static/js/main.e38d1486.js"
+    "static/css/main.392a5c5e.css",
+    "static/js/main.d0578d0b.js"
   ]
 }

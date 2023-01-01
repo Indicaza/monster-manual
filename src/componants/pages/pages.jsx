@@ -1,11 +1,17 @@
 import React from 'react';
 import page1 from './imgs/paper1.png';
 import page2 from './imgs/paper2.png';
-import page3 from './imgs/paper3.png';
 import page5 from './imgs/paper5.png';
 import page6 from './imgs/paper6.png';
-// import props from '../props.json';
-// import { useRef, useEffect } from 'react';
+import geo1 from './imgs/01.png';
+import geo2 from './imgs/02.png';
+import geo3 from './imgs/03.png';
+import geo4 from './imgs/04.png';
+import geo5 from './imgs/05.png';
+import geo6 from './imgs/06.png';
+import geo7 from './imgs/07.png';
+import geo8 from './imgs/08.png';
+import geo9 from './imgs/09.png';
 
 import './pages.js';
 import './pages.css';
@@ -16,57 +22,62 @@ export const Page = (props) => {
   const randomIndex = Math.floor(Math.random() * pagesArray.length);
   const page = pagesArray[randomIndex];
 
+  const geoArray = [geo1, geo2, geo3, geo4, geo5, geo6, geo7, geo8, geo9];
+  const randomGeoIndex = Math.floor(Math.random() * pagesArray.length);
+  const geo = geoArray[randomGeoIndex];
+
 
   return (
     <div className='container'>
-        <div className='page reveal fade-bottom' style={{backgroundImage:`url(${page})`}}>
-          <div className='title'>
-            <h2>{props.name}</h2>
-            <div className='challenge'>
+        <div className='page reveal fade-bottom grow' style={{backgroundImage:`url(${page})`}}>
+        <div className='sacredGeo grow' style={{backgroundImage:`url(${geo})`}}/>
+          <div className='title grow'>
+            <h2 className='grow'>{props.name}</h2>
+            <div className='challenge grow'>
                 <h3>{props.meta}</h3>
                 <p>CR: {props.Challenge}</p>
             </div>
           </div>
           <div 
-          // className=''
           id="torn_edge_banner" 
-          className="picture torn_container torn_left torn_right"
+          className="picture torn_container torn_left torn_right grow"
             style={{
               backgroundImage:`url(${props.img_url})`,
             }}
-          />
-          <div className='savingThrows'>
+          >
+          <div className='savingThrows grow'>
             <p>Saving Throws: {props['Saving Throws']}</p>
           </div>
-          <div className='details'>
-            <p>Armor Class: {props['Armor Class']}</p>
-            <p>Hit Points: {props['Hit Points']}</p>
-            <p>Speed: {props.Speed}</p>
+          </div>  
+          <div className='details grow'>
+            <p className='grow'>Armor Class: {props['Armor Class']}</p>
+            <p className='grow'>Hit Points: {props['Hit Points']}</p>
+            <p className='grow'>Speed: {props.Speed}</p>
           </div>
           <div className='content'>
-            <div className='stats'>
+            <div className='stats grow'>
               <ul>
-                <li>
+                <li className='grow'>
                   <p>STR: {props.STR} - {props.STR_mod}</p>
                 </li>
-                <li>
+                <li className='grow'>
                   <p>DEX: {props.DEX} - {props.DEX_mod}</p>
                 </li>
-                <li>
+                <li className='grow'>
                   <p>CON: {props.CON} - {props.CON_mod}</p>
                 </li>
-                <li>
+                <li className='grow'>
                   <p>INT: {props.INT} - {props.INT_mod}</p>
                 </li>
-                <li>
+                <li className='grow'>
                   <p>WIS: {props.WIS} - {props.WIS_mod}</p>
                 </li>
-                <li>
+                <li className='grow'>
                   <p>CHA: {props.CHA} - {props.CHA_mod}</p>
                 </li>
               </ul>
             </div>
-            <div className='body'>
+            <div className='body grow'>
               <ul className='abilities'>
                 <h3>Ablilities</h3>
                 <li>
