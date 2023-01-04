@@ -1,36 +1,36 @@
 .container {
   /* display: inline-flex; */
   /* justify-content: space-between; */
-
   /* justify-content: space-between; */
   /* border: 5px solid black; */
-
+  /* scroll-snap-align: center; */
   margin: 5.25vh auto;
   /* padding: auto; */
   /* background: url(./imgs/papyrus.png); */
-  background-repeat: repeat;
-  background-attachment: local;
   /* scroll-behavior: smooth; */
   /* transform: translateZ(-1px); */
 }
 
 .page {
+  opacity: 0;
   z-index: 1;
-  margin: 2.5vh 33.333vw;
+  /* margin: 2.5vh 33.333vw; */
+  margin: 2.5vh 50px;
   /* perspective: 1px; */
-  scroll-snap-align: center;
   /* padding: auto; */
   /* align-items: center; */
   /* padding: auto; */
   /* transform: translateZ(-2px); */
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
-  width: 35vw;
+  height: 900px;
+  width: 650px;
   border: 2px solid black;
   border-radius: 5px;
-  position: relative;
+  /* position: relative; */
   box-shadow: rgba(0, 0, 0, 1.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* transform: translateY(1000px); */
+
 }
 
 .title {
@@ -41,7 +41,6 @@
   /* filter: drop-shadow(5px 5px 10px #000); */
   /* width: 50vw; */
   /* position: relative; */
-
   /* left: calc(-50vw + 50%); */
   margin: 1vh auto 0;
   padding: 2.25%;
@@ -112,7 +111,6 @@ h3 {
 }
 
 .picture {
-
   margin: 0 auto -1.5%;
   padding: 0;
   width: 80%;
@@ -167,8 +165,10 @@ h3 {
   border: 6px solid black;
   border-radius: 10px; */
   display: flex;
-  background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0,0,0,1) 100%);
+  /* background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0,0,0,1) 100%); */
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   /* border-top: 2.5px solid black; */
   /* border-radius: 10px;
   border: 4px solid black; */
@@ -188,7 +188,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
 
 .details :nth-child(3) {
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(240,216,85,1) 10%, rgba(255,230,90,1) 50%, rgba(240,216,85,1) 90%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(88, 240, 85) 10%, rgb(98, 255, 90) 50%, rgb(88, 240, 85) 90%, rgba(0,0,0,1) 100%);
 }
 
 .details p {
@@ -208,8 +208,8 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
   font-family: 'IM Fell English SC', serif;
   font-size: 1.2rem;
   font-weight: 900;
-  border: 6px solid black;
-  border-radius: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
   line-height: 100%;
   width: 33%;
   height: 65px;
@@ -227,18 +227,30 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
 }
 
 .stats {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #2D3237;
+
+  background: radial-gradient(ellipse farthest-corner at right bottom, #efefef 0%, #d7d7d7 8%, #919191 30%, #747474 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #d5d5d5 0%, #bbbbbb 8%, #9c9c9c 25%, #565656 62.5%, #3c3c3c 100%);
+  /* background: url(./imgs/papyrus.png); */
+  /* background-repeat: repeat-y; */
+  /* background-attachment: local; */
+  line-height: 30%;
   /* margin: 0 0 0 -1%; */
   /* margin: auto; */
-  border: 2.5px solid black;
+  /* border: 2.5px solid black; */
   margin: 2.5%;
   padding: 1%;
-  width: 35%;
-  overflow: auto;
+  width: 25%;
+  /* overflow: auto; */
   /* height: auto; */
   padding: 1rem;
 }
 
 .stats ul {
+  
+  list-style-type: hebrew;
     /* text-align: center; */
     /* list-style: none; */
     display: flex;
@@ -246,7 +258,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 0 0 -45%;
+    margin: 0 0 0 -25%;
     /* padding: .75% 0; */
     font-family: 'IM Fell English SC', serif;
     font-size: 1rem;
@@ -254,19 +266,35 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
     /* justify-content: left; */
 }
 
+
+.stats li {
+  height: 2rem;
+  width: 7rem;
+  border: 2px solid #2D3237;
+  border-radius: 5px;
+  /* background: radial-gradient(ellipse farthest-corner at right bottom, #d5d5d5 0%, #ffffff 8%, #a4a4a4 30%, #989898 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #eaeaea 8%, #cacaca 25%, #616161 62.5%, #515151 100%); */
+  background: url(./imgs/papyrus.png);
+  /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
+/* color: whitesmoke; */
+/* background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0,0,0,1) 100%); */
+}
+
 .body {
-  /* border: 5px solid #2D3237; */
-  /* border-radius: 10px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border: 2px solid #2D3237;
+  border-radius: 5px;
   background: url(./imgs/papyrus.png);
   background-repeat: repeat-y;
   background-attachment: local;
-  /* border-radius: 2.5px; */
   margin: 2.5%;
   padding: 5%;
   width: 65%;
   height: auto;
   overflow-y:auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 
   /* filter: drop-shadow(5px 5px 10px #000); */
 }
@@ -281,21 +309,32 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
   line-height: 150%;
 }
 
-/* #traits {
-  text-align: center;
-  margin: auto 2%;
-  padding: 1rem;
-  font-family: 'IM Fell English SC', serif;
-  font-size: 1rem;
-  font-weight: 900;
-  line-height: 125%;
-} */
 
 .grow { 
   transition: all .2s ease-in-out; 
-  }
+}
   
-  .grow:hover { 
+.grow:hover { 
   /* transform: translateY(100px); */
-  transform: scale(1.05) translateY(-5px);; 
+  transform: scale(1.05) translateY(-3px);
+  filter: drop-shadow(.1px .1px .25px #000);
+
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+
+.fade-bottom {
+  animation: fade-bottom .5s cubic-bezier(1,-0.03,0,1.01);
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes fade-bottom {
+  0% {
+    /* opacity: 0; */
+    transform: translateY(1000px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

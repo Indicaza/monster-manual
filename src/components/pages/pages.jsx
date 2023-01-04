@@ -13,6 +13,7 @@ import geo7 from './imgs/07.png';
 import geo8 from './imgs/08.png';
 import geo9 from './imgs/09.png';
 
+import { useInView } from 'react-intersection-observer';
 import './pages.js';
 import './pages.css';
 
@@ -26,12 +27,17 @@ export const Page = (props) => {
   const randomGeoIndex = Math.floor(Math.random() * pagesArray.length);
   const geo = geoArray[randomGeoIndex];
 
+  const [ref, inView] = useInView({
+    threshold: .1,  // An element is considered in view when it is 50% in view
+    delay: 0,  // Wait 100ms before triggering the callback
+  });
 
+  
   return (
-    <div className='container'>
-        <div className='page reveal fade-bottom grow' style={{backgroundImage:`url(${page})`}}>
+    <div ref={ref} className='container'>
+        <div className={inView ? 'page fade-bottom grow' : 'page'} style={{backgroundImage:`url(${page})`}}>
         <div className='sacredGeo grow' style={{backgroundImage:`url(${geo})`}}/>
-          <div className='title grow'>
+          <div  className='title grow'>
             <h2 className='grow'>{props.name}</h2>
             <div className='challenge grow'>
                 <h3>{props.meta}</h3>
@@ -48,7 +54,7 @@ export const Page = (props) => {
           <div className='savingThrows grow'>
             <p>Saving Throws: {props['Saving Throws']}</p>
           </div>
-          </div>  
+          </div>
           <div className='details grow'>
             <p className='grow'>Armor Class: {props['Armor Class']}</p>
             <p className='grow'>Hit Points: {props['Hit Points']}</p>

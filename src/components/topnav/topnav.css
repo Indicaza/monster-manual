@@ -9,8 +9,8 @@
     width: 100vw;
     height: 6vh;
     background-image: linear-gradient(#070809, #2D3237);
-    /* background-repeat: repeat-x; */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
 .logoContainer {
     margin-left: 2.5vw;
@@ -47,8 +47,8 @@ input {
     width: 100%;
     height: 100%;
     border: 5px solid black;
-    border-radius: 25px;
-    text-align: center;
+    border-radius: 5px;
+    /* text-align: center; */
     font-size: 1.5rem;
     font-family: 'IM Fell English SC', serif;
 }
@@ -59,11 +59,12 @@ input {
     height: 1rem;
 }
 
-.growNav { 
+/* .growNav { 
     transition: all .2s ease-in-out; 
-    }
+}
     
-    .growNav:hover { 
-    /* transform: translateY(100px); */
-    transform: scale(1.05);
-    }
+.growNav:hover { 
+/* transform: translateY(100px); */
+/* transform: scale(1.05); */
+/* height: 8vh; */
+/* } */
