@@ -4,7 +4,7 @@
   /* justify-content: space-between; */
   /* justify-content: space-between; */
   /* border: 5px solid black; */
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   margin: 5.25vh auto;
   /* padding: auto; */
   /* background: url(./imgs/papyrus.png); */
@@ -323,7 +323,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
   filter: drop-shadow(5px 5px 10px #000);
 }
 .fade-bottom {
-  animation: fade-bottom .25s cubic-bezier(1,-0.03,0,1.01);
+  animation: fade-bottom .1s cubic-bezier(1,-0.03,0,1.01);
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
