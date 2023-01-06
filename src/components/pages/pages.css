@@ -1,9 +1,10 @@
 .container {
+  /* width: 100vw; */
   /* display: inline-flex; */
   /* justify-content: space-between; */
   /* justify-content: space-between; */
   /* border: 5px solid black; */
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
   margin: 5.25vh auto;
   /* padding: auto; */
   /* background: url(./imgs/papyrus.png); */
@@ -13,9 +14,9 @@
 
 .page {
   opacity: 0;
-  z-index: 1;
+  /* z-index: 1; */
   /* margin: 2.5vh 33.333vw; */
-  margin: 2.5vh 50px;
+  margin: 25px 50px;
   /* perspective: 1px; */
   /* padding: auto; */
   /* align-items: center; */
@@ -23,38 +24,14 @@
   /* transform: translateZ(-2px); */
   background-position: center;
   background-repeat: no-repeat;
-  height: 900px;
-  width: 650px;
+  height: 800px;
+  width: 550px;
   border: 2px solid black;
   border-radius: 5px;
   /* position: relative; */
   box-shadow: rgba(0, 0, 0, 1.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   /* transform: translateY(1000px); */
 
-}
-
-.title {
-  z-index: 1;
-  /* position: relative; */
-  /* background-image: url(./imgs/solidStone.jpeg); */
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-  /* filter: drop-shadow(5px 5px 10px #000); */
-  /* width: 50vw; */
-  /* position: relative; */
-  /* left: calc(-50vw + 50%); */
-  margin: 1vh auto 0;
-  padding: 2.25%;
-  height: auto;
-  /* width: 100vw; */
-  font-family: 'IM Fell English SC', serif;
-  font-size: 1rem;
-  font-weight: 900;
-  /* color: black; */
-  /* text-align: center; */
-  /* border: 5px solid black; */
-  border-radius: 15px;
-  /* background: rgb(0,0,0); */
-  /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(159,40,40,1) 5%, rgba(253,49,49,1) 20%, rgba(254,55,55,1) 50%, rgba(253,49,49,1) 80%, rgba(159,40,40,1) 95%, rgba(0,0,0,1) 100%); */
 }
 
 .sacredGeo {
@@ -73,6 +50,30 @@
   background-image: url(./imgs/01.png);
 }
 
+.title {
+  /* z-index: 1; */
+  /* position: relative; */
+  /* background-image: url(./imgs/solidStone.jpeg); */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  /* filter: drop-shadow(5px 5px 10px #000); */
+  /* width: 50vw; */
+  /* position: relative; */
+  /* left: calc(-50vw + 50%); */
+  /* margin: 1vh auto 0; */
+  padding: 5% 2.25%;
+  height: 12%;
+  /* width: 100vw; */
+  font-family: 'IM Fell English SC', serif;
+  /* font-size: 1rem; */
+  font-weight: 900;
+  /* color: black; */
+  /* text-align: center; */
+  /* border: 5px solid black; */
+  /* border-radius: 15px; */
+  /* background: rgb(0,0,0); */
+  /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(159,40,40,1) 5%, rgba(253,49,49,1) 20%, rgba(254,55,55,1) 50%, rgba(253,49,49,1) 80%, rgba(159,40,40,1) 95%, rgba(0,0,0,1) 100%); */
+}
+
 .challenge p {
   margin: 0 auto;
   padding: .5rem 0;
@@ -88,7 +89,7 @@ h2 {
   font-family: 'IM Fell English SC', serif;
   margin: 0 auto;
   /* padding: 2.5% 0 0; */
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: black;
   text-align: center;
@@ -222,7 +223,7 @@ h3 {
   border-radius: 10px;
   /* justify-content: center; */
   /* border: 5px solid black; */
-  height: 27.5vh;
+  height: 30%;
   width: 80%;
 }
 
@@ -261,15 +262,15 @@ h3 {
     margin: 0 0 0 -25%;
     /* padding: .75% 0; */
     font-family: 'IM Fell English SC', serif;
-    font-size: 1rem;
+    font-size: auto;
     font-weight: 700;
     /* justify-content: left; */
 }
 
 
 .stats li {
-  height: 2rem;
-  width: 7rem;
+  height: 1.75em;
+  width: 6.75em;
   border: 2px solid #2D3237;
   border-radius: 5px;
   /* background: radial-gradient(ellipse farthest-corner at right bottom, #d5d5d5 0%, #ffffff 8%, #a4a4a4 30%, #989898 40%, transparent 80%),
@@ -310,28 +311,27 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,50,55,1) 50%, rgba(0
 }
 
 
+
+
+
 .grow { 
-  transition: all .2s ease-in-out; 
+  transition: all .1s ease-in-out; 
 }
-  
-.grow:hover { 
-  /* transform: translateY(100px); */
-  transform: scale(1.05) translateY(-3px);
-  filter: drop-shadow(.1px .1px .25px #000);
-
-  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+.grow:hover {
+  transform: scale(1.05) translateY(-5px);
+  /* filter: drop-shadow(.1px .1px .25px #000); */
+  filter: drop-shadow(5px 5px 10px #000);
 }
-
 .fade-bottom {
-  animation: fade-bottom .5s cubic-bezier(1,-0.03,0,1.01);
+  animation: fade-bottom .25s cubic-bezier(1,-0.03,0,1.01);
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
 
 @keyframes fade-bottom {
   0% {
-    /* opacity: 0; */
-    transform: translateY(1000px);
+    opacity: 0;
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
