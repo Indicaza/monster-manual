@@ -29,8 +29,7 @@ export const Page = React.memo((props) => {
   const geo = geoArray[randomGeoIndex];
 
   const [ref, inView] = useInView({
-    threshold: .5,  // An element is considered in view when it is 50% in view
-    delay: 0,  // Wait 100ms before triggering the callback
+    threshold: .25,  // An element is considered in view when it is 50% in view
   });
 
   
