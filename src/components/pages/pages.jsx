@@ -13,6 +13,7 @@ import geo7 from './imgs/07.png';
 import geo8 from './imgs/08.png';
 import geo9 from './imgs/09.png';
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useInView } from 'react-intersection-observer';
 import './pages.js';
 import './pages.css';
@@ -37,6 +38,7 @@ export const Page = React.memo((props) => {
     <div ref={ref} className='container'>
 
         <div className={inView ? 'page fade-bottom grow' : 'page'} style={{backgroundImage:`url(${page})`}}>
+         
 
           <div className='sacredGeo' style={{backgroundImage:`url(${geo})`}}/>
 
@@ -48,13 +50,21 @@ export const Page = React.memo((props) => {
               </div>
             </div>
             
-            <div className="picture grow"style={{backgroundImage:`url(${props.img_url})`}}>
-
-            <div className='savingThrows grow'>
-              <p>Saving Throws: {props['Saving Throws']}</p>
+            <div className='pictureContainer grow'>
+              <LazyLoadImage 
+                className="picture" 
+                effect="blur"
+                src={props.img_url}
+                // PlaceholderSrc={'./imgs/treeLogo.png'}
+                alt="Picture of a monster"
+              />
+              <div className='savingThrows'>
+                <p>Saving Throws: {props['Saving Throws']}</p>
+              </div>
             </div>
 
-            </div>
+            {/* <div className="picture grow" style={{backgroundImage:`url(${props.img_url})`}}> */}
+            {/* </div> */}
 
             <div className='details grow'>
               <p className='grow'>Armor Class: {props['Armor Class']}</p>

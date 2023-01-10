@@ -1,10 +1,12 @@
 .background {
+  /* z-index: -10; */
   overflow-y: hidden;
   width: 100vw;
   height: 100vh;
   position: fixed;
   /* background: url(./imgs/papyrus.png); */
   background-color: #17BC9B;
+    /* background-color: #2D3237; */
 }
 
 .scrollContainer {
@@ -17,7 +19,6 @@
   /* overflow-x: scroll; */
   display: flex;
 }
-
 
 
 .topnav {
@@ -50,7 +51,7 @@
   background-size: contain;
 }
 
-h1 {
+.logoContainer h1 {
   padding-left: 15px;
   text-align: center;
   font-family: 'IM Fell English SC', serif;

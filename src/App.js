@@ -17,9 +17,9 @@ const [filter, filterSet] = React.useState("");
 //   return array.slice(0, Math.ceil(array.length * percent / 100));
 // }
 
-window.addEventListener('scroll', function(){
-  console.log('Are we there yet?')
-})
+// window.addEventListener('scroll', function(){
+//   console.log('Are we there yet?')
+// })
 
   return (
 
@@ -47,7 +47,7 @@ window.addEventListener('scroll', function(){
         <div className='scrollContainer'>
           {monsters
           .filter((monsters) => monsters.name.toLowerCase().includes(filter.toLowerCase()))
-          .slice(0, Math.ceil(monsters.length * 5 / 100))
+          .slice(0, Math.ceil(monsters.length * 10 / 100))
           .map((monsters, i) => (
             <Page className='page' key={i} {...monsters} />
           ))}

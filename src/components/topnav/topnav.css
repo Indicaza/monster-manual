@@ -62,9 +62,18 @@ input {
 /* .growNav { 
     transition: all .2s ease-in-out; 
 }
-    
+
 .growNav:hover { 
 /* transform: translateY(100px); */
 /* transform: scale(1.05); */
 /* height: 8vh; */
 /* } */
+
+/* .growNav:hover .search {
+    height: 5vh;
+} */
+
+/* .growNav:hover .searchButton {
+    height: 5vh;
+} */
+
