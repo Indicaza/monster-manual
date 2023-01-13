@@ -5,8 +5,8 @@
   height: 100vh;
   position: fixed;
   /* background: url(./imgs/papyrus.png); */
-  background-color: #17BC9B;
-    /* background-color: #2D3237; */
+  background-color: #17bc9b;
+  /* background-color: #2D3237; */
 }
 
 .scrollContainer {
@@ -20,7 +20,6 @@
   display: flex;
 }
 
-
 .topnav {
   z-index: 1;
   display: flex;
@@ -31,8 +30,10 @@
   padding: auto 10%;
   width: 100vw;
   height: 6vh;
-  background-image: linear-gradient(#070809, #2D3237);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-image: linear-gradient(#070809, #2d3237);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .logoContainer {
@@ -54,7 +55,7 @@
 .logoContainer h1 {
   padding-left: 15px;
   text-align: center;
-  font-family: 'IM Fell English SC', serif;
+  font-family: "IM Fell English SC", serif;
   color: white;
   margin: auto;
 }
@@ -73,7 +74,7 @@ input {
   border-radius: 5px;
   /* text-align: center; */
   font-size: 1.5rem;
-  font-family: 'IM Fell English SC', serif;
+  font-family: "IM Fell English SC", serif;
 }
 
 .searchButton {
