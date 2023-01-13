@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "3d08bb770780892e008d",
-    "url": "/monster-manual/static/css/main.60e94ca5.chunk.css"
+    "revision": "c1c4c21792d0ff1fab4d",
+    "url": "/monster-manual/static/css/main.f80ee2ed.chunk.css"
   },
   {
-    "revision": "3d08bb770780892e008d",
-    "url": "/monster-manual/static/js/main.3d08bb77.chunk.js"
+    "revision": "c1c4c21792d0ff1fab4d",
+    "url": "/monster-manual/static/js/main.d01600e9.chunk.js"
   },
   {
-    "revision": "a89266deb73d87b01859",
-    "url": "/monster-manual/static/js/1.a89266de.chunk.js"
+    "revision": "98abeb37f9fff4506f0b",
+    "url": "/monster-manual/static/js/runtime~main.b9c614aa.js"
   },
   {
-    "revision": "9636995bd5c7b0629981",
-    "url": "/monster-manual/static/js/2.9636995b.chunk.js"
+    "revision": "9e71b66fc00cdcef92c5",
+    "url": "/monster-manual/static/js/2.19893917.chunk.js"
   },
   {
-    "revision": "f9cbf7bdfa8911304cb0",
-    "url": "/monster-manual/static/js/runtime~main.f9cbf7bd.js"
+    "revision": "279e4fca54e5d8e57f31",
+    "url": "/monster-manual/static/js/3.33a557c1.chunk.js"
   },
   {
     "revision": "4b5b1da02be65f1889e19867f8adcb59",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/monster-manual/static/media/papyrus.b2fd3a49.png"
   },
   {
-    "revision": "847e4af40bfd533ae0e6d1bec7344fa1",
+    "revision": "f407b936021149191b67bb776ebeb4f5",
     "url": "/monster-manual/index.html"
   }
 ];
