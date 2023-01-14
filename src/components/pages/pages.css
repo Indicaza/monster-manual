@@ -5,7 +5,7 @@
 
 .page {
   opacity: 0;
-  margin: 25px 50px;
+  margin: 40px 50px;
   background-size: 130% 130%;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,6 +31,20 @@
   width: 200px;
   height: 200px;
   background-image: url(./imgs/01.png);
+}
+
+.idNumber {
+  font-family: "IM Fell English SC", serif;
+  transform: rotate(15deg);
+  /* font-size: 1rem; */
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  top: -2%;
+  left: 95%;
+  position: absolute;
+  /* width: 200px;
+  height: 200px; */
 }
 
 .title {

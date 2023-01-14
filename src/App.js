@@ -1,5 +1,5 @@
 import React from "react";
-import monsters from "./monsters.json";
+import monsters from "./monsters1.json";
 import "./App.css";
 import "./media.css";
 import { Page } from "./components/pages/pages.jsx";
@@ -32,9 +32,11 @@ function App() {
           .filter((monsters) =>
             monsters.name.toLowerCase().includes(filter.toLowerCase())
           )
-          .slice(0, Math.ceil((monsters.length * 12) / 100))
+          // .slice(0, Math.ceil((monsters.length * 12) / 100))
           .map((monsters, i) => (
-            <Page className="page" key={i} {...monsters} />
+            <LazyLoadComponent>
+              <Page className="page" key={i} {...monsters} />
+            </LazyLoadComponent>
           ))}
       </div>
     </div>

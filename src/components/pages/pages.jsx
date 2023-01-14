@@ -9,7 +9,7 @@ export const Page = React.memo((props) => {
   const geo = geos();
 
   const [ref, inView] = useInView({
-    threshold: 0.25,
+    threshold: 0.3,
   });
 
   return (
@@ -19,6 +19,9 @@ export const Page = React.memo((props) => {
         style={{ backgroundImage: `url(${page})` }}
       >
         <div className="sacredGeo" style={{ backgroundImage: `url(${geo})` }} />
+        <div className="idNumber">
+          <h3>{props.id}</h3>
+        </div>
 
         <div className="title">
           <h2>{props.name}</h2>
