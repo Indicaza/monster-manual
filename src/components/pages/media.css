@@ -1,7 +1,7 @@
 @media screen and (max-width: 1536px) {
   .container {
     padding: 0;
-    margin: 4vh 0;
+    margin: 1.5vh 0;
   }
 
   .title {
@@ -42,7 +42,7 @@
   }
 
   .content {
-    width: 80%;
+    width: 83%;
   }
 
   .stats {
