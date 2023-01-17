@@ -201,12 +201,13 @@
   }
 
   .details {
-    /* height: 15%; */
+    height: auto;
     width: 90%;
   }
 
   .details p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+    height: 50px;
   }
 
   .content {
@@ -218,11 +219,11 @@
   }
 
   .stats ul {
-    margin: -10% 0 0 -35%;
+    margin: -10% 0 0 -30%;
     width: 80%;
   }
 
   .stats ul li {
-    width: 130%;
+    width: 135%;
   }
 }
