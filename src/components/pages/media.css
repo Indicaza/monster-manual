@@ -175,11 +175,11 @@
     width: 90%;
   }
   .title h2 {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
 
   .title h3 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   .challenge p {
@@ -187,8 +187,8 @@
   }
 
   .page {
-    height: 555px;
-    width: 350px;
+    height: 575px;
+    width: 370px;
   }
 
   .pictureContainer {
@@ -201,6 +201,7 @@
   }
 
   .details {
+    /* height: 15%; */
     width: 90%;
   }
 
@@ -217,6 +218,11 @@
   }
 
   .stats ul {
-    margin: -5% 0 0 -30%;
+    margin: -10% 0 0 -35%;
+    width: 80%;
+  }
+
+  .stats ul li {
+    width: 130%;
   }
 }
