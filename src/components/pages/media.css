@@ -113,7 +113,7 @@
 @media screen and (max-width: 414px) {
   .container {
     padding: 0;
-    margin: 4vh 0;
+    margin: 0;
   }
 
   .title {
@@ -169,7 +169,7 @@
 @media screen and (max-width: 375px) {
   .container {
     padding: 0;
-    margin: 10px 0;
+    margin: 0;
   }
   .title {
     width: 90%;
@@ -188,7 +188,7 @@
 
   .page {
     height: 575px;
-    width: 370px;
+    width: 375px;
   }
 
   .pictureContainer {
