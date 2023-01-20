@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1ccb392018f3db3aefb6",
-    "url": "/monster-manual/static/css/main.d216db37.chunk.css"
+    "revision": "7676998b59b8123be2d5",
+    "url": "/monster-manual/static/css/main.3c489601.chunk.css"
   },
   {
-    "revision": "1ccb392018f3db3aefb6",
-    "url": "/monster-manual/static/js/main.7ea2ecb4.chunk.js"
+    "revision": "7676998b59b8123be2d5",
+    "url": "/monster-manual/static/js/main.ad4837bf.chunk.js"
   },
   {
     "revision": "98abeb37f9fff4506f0b",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/monster-manual/static/media/papyrus.b2fd3a49.png"
   },
   {
-    "revision": "c66dca6f3f872e85a3c4751d58b72a0d",
+    "revision": "ea7ac9b42a2a62d9965b0ff9a96554ef",
     "url": "/monster-manual/index.html"
   }
 ];
