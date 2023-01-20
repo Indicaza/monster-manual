@@ -4,18 +4,20 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useInView } from "react-intersection-observer";
 import "./pages.css";
 import "./media.css";
+
 export const Page = React.memo((props) => {
   const page = pages();
   const geo = geos();
 
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.5,
   });
 
   return (
-    <div ref={ref} className="container">
+    <div className="container">
       <div
-        className={inView ? "page fade-bottom grow" : "page"}
+        ref={ref}
+        className={inView ? "page fade-bottom" : "page"}
         style={{ backgroundImage: `url(${page})` }}
       >
         <div className="sacredGeo" style={{ backgroundImage: `url(${geo})` }} />
