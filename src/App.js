@@ -12,7 +12,7 @@ function App() {
     <div className="background">
       {/* <TopNav {...monsters}/> */}
 
-      <div className="topnav ">
+      <div className="topnav">
         <div className="logoContainer growNav">
           <div className="logo growNav"></div>
           <h1>Monster Manual</h1>

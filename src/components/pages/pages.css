@@ -1,6 +1,7 @@
 .container {
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
   margin: 5.25vh auto;
+  width: 100vw;
 }
 
 .page {
@@ -385,7 +386,7 @@
 }
 
 .fade-bottom {
-  animation: fade-bottom 1.5s;
+  animation: fade-bottom 1.25s;
   animation-fill-mode: both;
   /* animation-delay: 0s; */
 }
