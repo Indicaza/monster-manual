@@ -35,7 +35,7 @@ function App() {
           .filter((monsters) =>
             monsters.name.toLowerCase().includes(filter.toLowerCase())
           )
-          // .slice(0, Math.ceil((monsters.length * 12) / 100))
+          .slice(0, Math.ceil((monsters.length * 12) / 100))
           .map((monsters, i) => (
             <LazyLoadComponent>
               <Page className="page" key={i} {...monsters} />

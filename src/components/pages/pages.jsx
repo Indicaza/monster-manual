@@ -9,6 +9,7 @@ export const Page = React.memo((props) => {
   const page = pages();
   const geo = geos();
 
+
   const [ref, inView] = useInView({
     threshold: 0.25,
   });
