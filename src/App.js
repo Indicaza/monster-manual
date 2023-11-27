@@ -4,14 +4,12 @@ import "./App.css";
 import "./media.css";
 import { Page } from "./components/pages/pages.jsx";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
-// time to clean this project up!
+
 function App() {
   const [filter, filterSet] = React.useState("");
 
   return (
     <div className="background">
-      {/* <TopNav {...monsters}/> */}
-
       <div className="topnav">
         <div className="logoContainer growNav">
           <div className="logo growNav"></div>
@@ -26,19 +24,15 @@ function App() {
           />
         </div>
       </div>
-      {/* <video autoplay muted loop className="myVideo">
-        <source src="./imgs/stars.mp4" type="video/mp4" />
-      </video> */}
 
       <div className="scrollContainer">
         {monsters
-          .filter((monsters) =>
-            monsters.name.toLowerCase().includes(filter.toLowerCase())
+          .filter(monster =>
+            monster.name.toLowerCase().includes(filter.toLowerCase())
           )
-          .slice(0, Math.ceil((monsters.length * 12) / 100))
-          .map((monsters, i) => (
-            <LazyLoadComponent>
-              <Page className="page" key={i} {...monsters} />
+          .map((monster, i) => (
+            <LazyLoadComponent key={i}>
+              <Page className="page" {...monster} />
             </LazyLoadComponent>
           ))}
       </div>
