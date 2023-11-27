@@ -18,7 +18,7 @@ export const Page = React.memo((props) => {
     <div className="container">
       <div
         ref={ref}
-        className={inView ? "page fade-bottom" : "page"}
+        className={inView ? "page fade-bottom" : "page grow"}
         style={{ backgroundImage: `url(${page})` }}
       >
         <div className="sacredGeo" style={{ backgroundImage: `url(${geo})` }} />
@@ -34,7 +34,7 @@ export const Page = React.memo((props) => {
           </div>
         </div>
 
-        <div className="pictureContainer grow">
+        <div className="pictureContainer">
           <LazyLoadImage
             className="picture"
             effect="blur"
@@ -46,41 +46,41 @@ export const Page = React.memo((props) => {
           </div>
         </div>
 
-        <div className="details grow">
-          <p className="grow">Armor Class: {props["Armor Class"]}</p>
-          <p className="grow">Hit Points: {props["Hit Points"]}</p>
-          <p className="grow">Speed: {props.Speed}</p>
+        <div className="details">
+          <p className="">Armor Class: {props["Armor Class"]}</p>
+          <p className="">Hit Points: {props["Hit Points"]}</p>
+          <p className="">Speed: {props.Speed}</p>
         </div>
 
         <div className="content">
-          <div className="stats grow">
+          <div className="stats">
             <ul>
-              <li className="grow">
+              <li className="">
                 <p>
                   STR: {props.STR} - {props.STR_mod}
                 </p>
               </li>
-              <li className="grow">
+              <li className="">
                 <p>
                   DEX: {props.DEX} - {props.DEX_mod}
                 </p>
               </li>
-              <li className="grow">
+              <li className="">
                 <p>
                   CON: {props.CON} - {props.CON_mod}
                 </p>
               </li>
-              <li className="grow">
+              <li className="">
                 <p>
                   INT: {props.INT} - {props.INT_mod}
                 </p>
               </li>
-              <li className="grow">
+              <li className="">
                 <p>
                   WIS: {props.WIS} - {props.WIS_mod}
                 </p>
               </li>
-              <li className="grow">
+              <li className="">
                 <p>
                   CHA: {props.CHA} - {props.CHA_mod}
                 </p>
