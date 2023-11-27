@@ -376,17 +376,15 @@
   line-height: 150%;
 }
 
-.grow {
-  /* other styles */
+/* .grow {
   transition: all 0.75s ease-in-out;
 }
 
 .grow:hover {
   transform: scale(1.05) translateY(-5px);
   filter: drop-shadow(5px 5px 10px #000);
-  /* transition-duration: 0.75s; */
   transition: all 0.75s ease-in-out;
-}
+} */
 
 .fade-bottom {
   animation: fade-bottom 1.25s;

@@ -18,7 +18,7 @@ export const Page = React.memo((props) => {
     <div className="container">
       <div
         ref={ref}
-        className={inView ? "page fade-bottom" : "page grow"}
+        className={inView ? "page fade-bottom" : "page"}
         style={{ backgroundImage: `url(${page})` }}
       >
         <div className="sacredGeo" style={{ backgroundImage: `url(${geo})` }} />
@@ -87,7 +87,7 @@ export const Page = React.memo((props) => {
               </li>
             </ul>
           </div>
-          <div className="body grow">
+          <div className="body">
             <ul className="abilities">
               <h3>Ablilities</h3>
               <li>
