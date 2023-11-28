@@ -15,7 +15,7 @@ function App() {
           <div className="logo growNav"></div>
           <h1>Monster Manual</h1>
         </div>
-        <div className="search gradient-border">
+        <div className="search">
           <input
             type="text"
             placeholder="Search..."
