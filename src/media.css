@@ -1,0 +1,13 @@
+@media screen and (max-width: 414px) {
+  .logoContainer h1 {
+    /* display: none; */
+    font-size: 1rem;
+  }
+
+  .search {
+    margin: 0;
+    padding-right: 5vw;
+    width: 40vw;
+    height: 70%;
+  }
+}
