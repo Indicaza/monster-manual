@@ -4,7 +4,7 @@ import "./App.css";
 import "./media.css";
 import { Page } from "./components/pages/pages.jsx";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
-
+// check
 function App() {
   const [filter, filterSet] = React.useState("");
 
